@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Multivitamin Capsules</title>
+    <link rel="stylesheet" href="../css/product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a href="../menu.html" class="logo">← Back to Store</a>
+
+    <div class="product-page">
+        <div class="image-section">
+            <img src="../images/multivitamin.jpg">
+        </div>
+
+        <div class="details-section">
+            <h1>Multivitamin Capsules -1300MG</h1>
+
+            <div class="rating">
+                ⭐⭐⭐⭐☆ <span>(420 ratings)</span>
+            </div>
+
+            <p class="price">₹799
+                <span class="mrp">₹1,099</span>
+                <span class="discount">27% Off</span>
+            </p>
+
+            <p class="stock">In Stock ✔</p>
+
+            <h3>About this item</h3>
+            <ul>
+                <li>Supports immunity & energy</li>
+                <li>Essential vitamins & minerals</li>
+                <li>Daily health support formula</li>
+                <li>Improves overall wellness</li>
+                <li>Easy to swallow capsules</li>
+            </ul>
+
+            <br>
+            <button onclick="addToCart('Multivitamin Capsules', 799)">Add to Cart</button>
+            <button class="buy" onclick="buyNow('Multivitamin Capsules', 799)">Buy Now</button>
+
+        </div>
+    </div>
+    <!-- CUSTOMER REVIEWS -->
+    <div class="reviews-section">
+
+        <h2>Customer Reviews</h2>
+
+        <select id="rating">
+            <option value="">Rating</option>
+            <option value="1">⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="5">⭐⭐⭐⭐⭐</option>
+        </select>
+
+        <br><br>
+
+        <textarea id="reviewText" placeholder="write your review"></textarea>
+
+        <br><br>
+
+        <button onclick="addReview()">Submit Review</button>
+
+        <div id="reviewList"></div>
+        <!--ave-->
+        <div class="averageBox">
+
+            <h3>Average Rating</h3>
+
+            <p id="averageRating">0 ⭐</p>
+
+            <p id="totalReviews">0 Reviews</p>
+
+        </div>
+
+    </div>
+    <script src="../js/product.js"></script>
+</body>
+
+</html>

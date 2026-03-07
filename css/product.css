@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #111;
+    color: white;
+    padding: 20px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #00ffe5;
+    font-weight: 600;
+}
+
+.product-page {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.details-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.rating {
+    margin: 10px 0;
+    color: gold;
+}
+
+.rating span {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.price-box {
+    margin: 15px 0;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: 700;
+    color: #00ffe5;
+}
+
+.mrp {
+    text-decoration: line-through;
+    margin-left: 10px;
+    color: #aaa;
+}
+
+.discount {
+    margin-left: 10px;
+    color: lime;
+}
+
+.stock {
+    color: lightgreen;
+    margin: 10px 0;
+}
+
+.description ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #00ffe5;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.buy {
+    background: orange;
+    color: black;
+}
+
+.reviews-section {
+    margin-top: 50px;
+}
+
+.review {
+    background: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+@media(max-width:768px) {
+    .product-page {
+        flex-direction: column;
+    }
+}
+
+.image-section img {
+    transition: 0.4s;
+}
+
+.image-section img:hover {
+    transform: scale(1.1);
+}
+
+/* Reviews Section */
+
+.reviews-section {
+    margin-top: 40px;
+    padding: 20px;
+    max-width: 500px;
+}
+
+/* Title */
+
+.reviews-section h2 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+/* Rating Dropdown */
+
+#rating {
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    background: #2c2c2c;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Textarea */
+
+#reviewText {
+    width: 100%;
+    height: 70px;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #1e1e1e;
+    color: #fff;
+    resize: none;
+}
+
+/* Submit Button */
+
+.reviews-section button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #00e6a8, #00c2ff);
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.reviews-section button:hover {
+    transform: scale(1.05);
+}
+
+/* Review List Container */
+
+#reviewList {
+    margin-top: 15px;
+}
+
+/* Single Review Card */
+
+.review {
+    background: #2c2c2c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Review Stars */
+
+.review span {
+    color: #ffc107;
+    font-size: 16px;
+}
+
+/* Review Text */
+
+.review p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Delete Button */
+
+.review button {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.review button:hover {
+    background: #ff1a1a;
+}
+
+.rating-summary {
+    margin: 10px 0;
+    color: #fff;
+}
+
+#avgRating {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+#avgStars {
+    color: #ffc107;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+#reviewCount {
+    font-size: 14px;
+    color: #ccc;
+}

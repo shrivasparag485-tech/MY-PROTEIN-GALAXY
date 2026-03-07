@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART-TRAER</title>
+    <link rel="stylesheet" href="css/smart-traker.css" </head>
+
+<body>
+    <div class="tracker-card">
+        <header>
+            <a href="index.html" class="back-btn">← Back</a>
+
+        </header>
+        <h2>📊 Smart Tracker</h2>
+
+        <p>Track daily protein intake easily with progress visualization.</p>
+
+        <div class="progress-container">
+            <div id="progressBar"></div>
+        </div>
+
+        <div class="tracker-info">
+            <span id="proteinToday">0</span> g /
+            <span id="proteinGoal">120</span> g
+        </div>
+
+        <input type="number" id="proteinInput" placeholder="Add protein (g)">
+
+        <button onclick="addProtein()">Add Protein</button>
+
+        <button onclick="resetProtein()" class="reset">Reset Today</button>
+
+    </div>
+    <script src="js/smart-traker.js"></script>
+</body>
+
+</html>
